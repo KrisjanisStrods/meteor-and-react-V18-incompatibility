@@ -18,20 +18,20 @@ meteor add reywood:publish-composite
 
 1) Start the project;
 2) Go to local host and open client side console and see that RENDER gets outputted 3 times;
-3) Go to main.jsx and comment oit working implementation with non working one and save;
+3) Go to main.jsx and comment out working implementation with non working one and save;
 ```js
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { App } from '/imports/ui/App';
 
-// Previous Way of initializing react - WORKS
+// Previous Way of initializing react - WORKS CORRECTLY
 // import { render } from 'react-dom';
 // Meteor.startup(() => {
 //   render(<App/>, document.getElementById('react-target'));
 // });
 
 
-// New way of initializing react in V18 - DOES NOT WORK
+// New way of initializing react in V18 - DOES NOT WORK CORRECTLY
 import { createRoot } from 'react-dom';
 Meteor.startup(() => {
   const root = createRoot(document.getElementById('react-target'));
