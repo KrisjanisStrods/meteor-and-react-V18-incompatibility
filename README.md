@@ -2,7 +2,6 @@
 # Weather App
 
 Sample project to showcase meteor incompatibility with React V18
-
 ## Installation
 
 1) Install npm dependencies
@@ -18,7 +17,7 @@ meteor add reywood:publish-composite
 ## Reproduce
 
 1) Start the project;
-2) Go to local host and open client side console and see that RENDER gets outputted 3 times; 
+2) Go to local host and open client side console and see that RENDER gets outputted 3 times;
 3) Go to main.jsx and comment oit working implementation with non working one and save;
 ```js
 import React from 'react';
@@ -41,3 +40,9 @@ Meteor.startup(() => {
 ```
 
 4) Observe that now on client side console RENDER gets infinitely spammed, indicating infinite component re-rendering;
+
+## Console output with previous React implementation (RENDER gets outputted 3 times)
+![Alt text](readmeAssets/working.png?raw=true "Working")
+
+## Console output with new V18 implementation (RENDER gets spammed)
+![Alt text](readmeAssets/not_working.png?raw=true "Not Working")
