@@ -1,5 +1,5 @@
 
-# Weather App
+# Meteor and react V18 incompatibility demonstration
 
 Sample project to showcase meteor incompatibility with React V18
 ## Install npm dependencies
