@@ -32,7 +32,7 @@ import { App } from '/imports/ui/App';
 
 
 // New way of initializing react in V18 - DOES NOT WORK CORRECTLY
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 Meteor.startup(() => {
   const root = createRoot(document.getElementById('react-target'));
   root.render(<App/>);
