@@ -2,16 +2,10 @@
 # Weather App
 
 Sample project to showcase meteor incompatibility with React V18
-## Installation
-
-1) Install npm dependencies
+## Install npm dependencies
 
 ```
-npm install
-```
-2) Add Meteor dependencies
-```
-meteor add reywood:publish-composite 
+meteor npm install
 ```
     
 ## Reproduce
